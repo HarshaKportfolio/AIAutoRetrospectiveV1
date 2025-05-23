@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIAutoRetrospective</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        function showBlankScreen() {
+            document.getElementById('main-content').innerHTML = `
+                <div class="flex-1 p-4">
+                    <h1 class="text-xl font-semibold mb-4">AIAutoRetrospective</h1>
+                    <div class="bg-white rounded shadow p-4 h-full">
+                        <p class="text-gray-600">Blank screen for AIAutoRetrospective</p>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <!-- Header -->
+    <header class="bg-white shadow p-4 flex items-center justify-between">
+        <div class="flex items-center space-x-4">
+            <img src="https://via.placeholder.com/24" alt="Jira Logo" class="h-6">
+            <nav class="flex space-x-2">
+                <a href="#" class="text-blue-600 font-semibold">For you</a>
+                <a href="#" class="text-gray-600">Recent</a>
+                <a href="#" class="text-gray-600">Starred</a>
+                <a href="#" class="text-gray-600">Apps</a>
+                <a href="#" class="text-gray-600">Plans</a>
+                <a href="#" class="text-gray-600">Projects</a>
+            </nav>
+        </div>
+        <div class="flex items-center space-x-4">
+            <button class="bg-blue-600 text-white px-4 py-2 rounded">Create</button>
+            <span class="text-purple-600">Premium trial</span>
+            <div class="w-8 h-8 bg-gray-300 rounded-full flex items-center justify-center">HK</div>
+        </div>
+    </header>
+
+    <!-- Sidebar and Main Content -->
+    <div class="flex">
+        <!-- Sidebar -->
+        <aside class="w-64 bg-white shadow p-4 h-screen">
+            <h2 class="text-lg font-semibold text-blue-600">
+                <a href="#" onclick="showBlankScreen()">AIAutoRetrospective</a>
+            </h2>
+            <nav class="mt-4 space-y-2">
+                <a href="#" class="block text-gray-600">View all projects</a>
+                <a href="#" class="block text-gray-600">Filters</a>
+                <a href="#" class="block text-gray-600">Dashboards</a>
+                <a href="#" class="block text-gray-600">Goals</a>
+                <a href="#" class="block text-gray-600">Customize sidebar</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main id="main-content" class="flex-1 p-4">
+            <!-- Default Project Header and Kanban Board -->
+            <div class="flex items-center justify-between mb-4">
+                <h1 class="text-xl font-semibold">AIAutoRetrospective</h1>
+                <nav class="flex space-x-2">
+                    <a href="#" class="text-gray-600">Summary</a>
+                    <a href="#" class="text-gray-600">Timeline</a>
+                    <a href="#" class="text-blue-600 font-semibold">Backlog</a>
+                    <a href="#" class="text-gray-600">Board</a>
+                    <a href="#" class="text-gray-600">Calendar</a>
+                    <a href="#" class="text-gray-600">List</a>
+                    <a href="#" class="text-gray-600">Forms</a>
+                    <a href="#" class="text-gray-600">All work</a>
+                    <a href="#" class="text-gray-600">Code</a>
+                    <a href="#" class="text-gray-600">Archive</a>
+                    <a href="#" class="text-gray-600">Items</a>
+                    <a href="#" class="text-gray-600">Pages</a>
+                    <a href="#" class="text-gray-600">More</a>
+                </nav>
+            </div>
+
+            <!-- Search and Filter -->
+            <div class="flex items-center space-x-2 mb-4">
+                <input type="text" placeholder="Search board" class="border rounded px-2 py-1">
+                <button class="border rounded px-2 py-1">HK</button>
+                <button class="border rounded px-2 py-1">Filter</button>
+                <button class="border rounded px-2 py-1">Group</button>
+            </div>
+
+            <!-- Kanban Board -->
+            <div class="flex space-x-4 overflow-x-auto">
+                <!-- TO DO Column -->
+                <div class="bg-white rounded shadow w-64 p-4">
+                    <h3 class="font-semibold mb-4">TO DO</h3>
+                    <div class="text-center">
+                        <img src="https://via.placeholder.com/100" alt="Arrow Icon" class="mx-auto mb-4">
+                        <p class="text-gray-600">Get started in the backlog</p>
+                        <p class="text-gray-600">Plan and start a sprint to see work here.</p>
+                        <button class="bg-blue-600 text-white px-4 py-2 rounded mt-4">Go to Backlog</button>
+                    </div>
+                </div>
+
+                <!-- IN PROGRESS Column -->
+                <div class="bg-white rounded shadow w-64 p-4">
+                    <h3 class="font-semibold mb-4">IN PROGRESS</h3>
+                </div>
+
+                <!-- TESTING Column -->
+                <div class="bg-white rounded shadow w-64 p-4">
+                    <h3 class="font-semibold mb-4">TESTING</h3>
+                </div>
+
+                <!-- IN REVIEW Column -->
+                <div class="bg-white rounded shadow w-64 p-4">
+                    <h3 class="font-semibold mb-4">IN REVIEW</h3>
+                </div>
+
+                <!-- DONE Column -->
+                <div class="bg-white rounded shadow w-64 p-4">
+                    <h3 class="font-semibold mb-4">DONE</h3>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
